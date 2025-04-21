@@ -1,0 +1,255 @@
+@media (max-width: 768px) {
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #0a0648, #07050e, #0a0648);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+h2{
+    max-width: 800px; /* Define uma largura fixa */
+    margin: auto; /* Centraliza automaticamente */
+    text-align: justify; /* Justifica o texto */
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Organiza elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    height: 300px; /* Ajusta a altura do cabeçalho */
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 17, 68, 0.8), rgba(0, 85, 170, 0.6)),
+                url('ocara.jpg'); /* Adiciona degradê sobre a imagem */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 150, 0.5);
+}
+
+header:hover {
+    transform: scale(1.02); /* Efeito de crescimento ao passar o mouse */
+}
+
+
+.texto h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ff66;
+}
+
+.texto h2 {
+    font-size: 20px;
+}
+header img {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(125, 9, 188, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: rotate(3deg) scale(1.05); /* Pequena rotação + zoom ao passar o mouse */
+}
+
+
+.imagens-container {
+    display: flex; /* Organiza as imagens lado a lado */
+    justify-content: center; /* Centraliza */
+    gap: 50px; /* Espaço entre imagens */
+    margin-top: 20px; /* Distância do header */
+}
+
+.imagens-container img {
+    width: 250px; /* Aumenta um pouco o tamanho */
+    height: 150px; /* Define altura fixa */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    border-radius: 0; /* Remove bordas arredondadas */
+    box-shadow: 0 0 10px #09bc89; /* Mantém o efeito luminoso verde */
+}
+
+p {
+    font-size: 16px;
+}
+.modulos {
+    display: flex; /* Organiza os módulos lado a lado */
+    flex-wrap: wrap; /* Permite que eles se ajustem em telas menores */
+    justify-content: center; /* Centraliza os módulos */
+    gap: 10px; /* Espaçamento entre os módulos */
+    margin-top: 20px; /* Distância do header */
+}
+
+.modulo {
+    display: flex;
+    align-items: center;
+    width: 90%; /* Define largura uniforme */
+    padding: 15px;
+    background: none; /* Remove fundo verde */
+    border: none; /* Remove borda verde */
+    box-shadow: 0 0 10px rgba(9, 188, 140, 0.5); /* Adiciona um efeito elegante */
+    border-radius: 10px; /* Bordas suavemente arredondadas */
+    transition: transform 0.3s ease-in-out; /* Efeito de animação */
+}
+
+.modulo:hover {
+    transform: scale(1.05); /* Animação ao passar o mouse */
+}
+
+.modulo span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.modulo p {
+    font-size: 16px;
+}
+
+
+.curso-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  
+}
+
+.aluna-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduz o espaçamento entre elementos */
+    padding: 10px; /* Diminui o preenchimento interno */
+    background: linear-gradient(to right, #001144, #0055aa);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.4);
+    margin-top: 30px; /* Ajusta o espaçamento superior */
+    margin-bottom: 30px; /* Ajusta o espaçamento inferior */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.nome {
+    color: #00ff66;
+    font-weight: bold;
+    font-size: 18px; /* Reduz tamanho da fonte */
+}
+
+.aluna-container img {
+    width: 140px; /* Reduz largura */
+    height: 140px; /* Reduz altura */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(125, 9, 188, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.aluna-container img:hover {
+    transform: scale(1.05); /* Diminui o efeito de zoom ao passar o mouse */
+}
+
+
+.botao-site {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00ccff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.botao-site:hover {
+    background-color: #0055aa;
+    transform: scale(1.05);
+}
+
+.circuito-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to right, #041034, #0b253f);
+    color: white;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 150, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #00ff66;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.circuito-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #001144, #044833, #050838);
+    color: white;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(15, 199, 224, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #10b843; /* Azul claro para destaque */
+    text-transform: uppercase;
+}
+
+.tipos, .componentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(0, 85, 170, 0.2); /* Fundo azul semi-transparente */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(6, 126, 149, 0.5);
+}
+
+.imagem-circuito {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 170, 116, 0.7);
+}
+
+.led-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.conclusao-icon {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #10d47f;
+}
+
+}
